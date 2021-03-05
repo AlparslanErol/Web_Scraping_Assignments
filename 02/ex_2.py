@@ -31,18 +31,3 @@ for index, occupation in enumerate(bs.find('div', {'class': 'hlist hlist-separat
 print("\nResults for point 3...")
 for index, reference in enumerate(bs.find_all('span', {'class': 'reference-text'})):
     print("Reference {}..: {}\n".format(index + 1, reference.text))
-
-
-
-
-
-
-# for index in bs.find_all('span', {'class': "excitingNote"}):
-#     print(index.text)
-#
-# ## POINT 2
-# print(bs.find('tr', {'id': 'gift5'}).td.text)
-#
-#
-# ## POINT 3
-# print(bs.find('div', {'id': 'footer'}).text)
