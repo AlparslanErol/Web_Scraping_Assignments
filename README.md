@@ -11,31 +11,41 @@ This folder is only created for first class and you can simply find student info
 ### Folder ``02``
 In this folder, you can find the first assignment of the course which is ``Exercises in HTML parsing`` and my solutions.
 There are 2 main exercise in this assignment,
-1.  Totally Normal Gifts - Easy\
+1.  **Totally Normal Gifts - Easy**\
 In this task ``pythonscraping.com``: http://www.pythonscraping.com/pages/page3.html page is used to scrap data. You can find the exact
 definitions of tasks:
     - Extract **bolded** parts of the text.
     - Extract the last **Item Title** from the table.
     - Extract the **footer** of the webpage.
     
-2.  Pawe l Domaga la - Medium\
+2.  **Pawel Domagala - Medium**\
 In this task ``Wikipedia.org``: https://en.wikipedia.org/wiki/Pawe%C5%82_Domaga%C5%82a page is used to scrap data. You can find the exact
 definitions of tasks:
     - Extract Pawel's **date of birth**.
-    - Extract Pawe l's **three occupations**.
+    - Extract Pawel's **three occupations**.
     - Extract the list of **references**.
     
 > **Deadline:** 07.03.2021, 23:59
 
-> ``Python 3.7.6`` was used to develop these piece of codes.\
+> ``Python 3.9.0`` was used to develop these piece of codes.\
 > You can find the required python packages and their versions in ``02/requirements.txt`` file.\
-> You can simply run the code like as follows from command line:
+> Thanks to ``Makefile``, you can create a virtual environment, install required packeges and delete virtual environment.
+> If you do not want to use virtual environment, then you need to install required packages in your base python interpreter.
+> * make ``venv`` creates python virtual environment.
+> * make ``require`` install required packages.
+> * make ``clean`` delete venv file.
+
+You can simply run the code like as follows from command line:
 ```console
 **LINUX**
+...@...:project_root$ make venv
+...@...:project_root$ make require
 ...@...:project_root$ python3 ex_1.py
 ...@...:project_root$ python3 ex_2.py
 
 **WINDOWS**
+project_root> make venv
+project_root> make require
 project_root> python ex_1.py
 project_root> python ex_2.py
 ```
