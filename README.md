@@ -33,11 +33,7 @@ definitions of tasks:
 > If you do not want to use virtual environment, then you need to install required packages in your base python interpreter.
 > * make ``venv`` creates python virtual environment.
 > * make ``require`` install required packages.
-<<<<<<< HEAD
 > * make ``clean`` delete venv file.
-=======
-> * make ``clean`` delete venv file. \
->>>>>>> refs/remotes/origin/main
 
 You can simply run the code like as follows from command line:
 ```console
