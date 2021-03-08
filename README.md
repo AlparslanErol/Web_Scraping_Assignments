@@ -6,7 +6,7 @@ This repository is used to assignment submission of Web Scraping and Social Medi
 ### Folder ```01```
 This folder is only created for first class and you can simply find student information of mine in `id.txt` file.
 > Alparslan Erol \
-> 428481
+> 428681
 
 ### Folder ``02``
 In this folder, you can find the first assignment of the course which is ``Exercises in HTML parsing`` and my solutions.
