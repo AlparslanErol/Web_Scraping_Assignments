@@ -38,17 +38,21 @@ definitions of tasks:
 You can simply run the code like as follows from command line:
 ```console
 **LINUX**
+## For linux, you need to update the makefile commands compatible for linux environment.
 ...@...:project_root$ make venv
 ...@...:project_root$ make require
-...@...:project_root$ python3 ex_1.py
-...@...:project_root$ python3 ex_2.py
+...@...:project_root$ python3 .\02\ex_1.py
+...@...:project_root$ python3 .\02\ex_2.py
 
 **WINDOWS**
 project_root> make venv
 project_root> make require
-project_root> python ex_1.py
-project_root> python ex_2.py
+project_root> python .\02\ex_1.py
+project_root> python .\02\ex_2.py
 ```
+
+If you face problem about creating virtual environment from makefile, you can create virtual environment manually and
+install packages from ``requirements.txt`` file.
 
 ### Submissions to the course Web Scraping and Social Media Scraping
 
