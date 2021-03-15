@@ -10,7 +10,7 @@ This folder is only created for first class and you can simply find student info
 
 ### Folder ``02``
 In this folder, you can find the first assignment of the course which is ``Exercises in HTML parsing`` and my solutions.
-There are 2 main exercise in this assignment,
+There are 2 main exercises in this assignment,
 1.  **Totally Normal Gifts - Easy**\
 In this task ``pythonscraping.com``: http://www.pythonscraping.com/pages/page3.html page is used to scrap data. You can find the exact
 definitions of tasks:
@@ -27,9 +27,27 @@ definitions of tasks:
     
 > **Deadline:** 07.03.2021, 23:59
 
-> ``Python 3.9.0`` was used to develop these piece of codes.\
-> You can find the required python packages and their versions in ``02/requirements.txt`` file.\
-> Thanks to ``Makefile``, you can create a virtual environment, install required packeges and delete virtual environment.
+### Folder ``03``
+In this folder, you can find the second assignment of the course which is ``Exercises in regular and lambda expressions``
+and my solutions.\
+There are 2 main exercises in this assignment,
+1.  **War and Peace - Easy**\
+In this task ``pythonscraping.com``: http://www.pythonscraping.com/pages/warandpeace.html page is used to scrap data. You can find the exact
+definitions of tasks:
+    - Using ``lambda expressions`` print out how many times a tag consisting of a string ``Anna Pavlovna`` appears in the text.
+    - Using ``lambda expressions`` enlist **tags with exactly one attribute**. Also, print out the length of this list.
+    
+2.  **Flags - Medium**\
+In this task ``Wikipedia.org``: https://en.wikipedia.org/wiki/United_Nations_Development_Programme page is used to scrap data. You can find the exact
+definitions of tasks:
+    - Using ``regex`` extract all of the **flags' image paths**.
+    
+> **Deadline:** 17.03.2021
+
+### Virtual Environment with Project Requirements
+> ``Python 3.9.0`` was used to develop for the homework assignments.\
+> You can find the required python packages and their versions in ``requirements.txt`` file.\
+> Thanks to ``Makefile``, you can create a virtual environment, install required packages and delete virtual environment.
 > If you do not want to use virtual environment, then you need to install required packages in your base python interpreter.
 > * make ``venv`` creates python virtual environment.
 > * make ``require`` install required packages.
@@ -50,7 +68,6 @@ project_root> make require
 project_root> python .\02\ex_1.py
 project_root> python .\02\ex_2.py
 ```
-
 If you face problem about creating virtual environment from makefile, you can create virtual environment manually and
 install packages from ``requirements.txt`` file.
 

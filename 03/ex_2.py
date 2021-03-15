@@ -1,7 +1,14 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+Created on 11.03.2021 - 23:15
+
+@author: ALPARSLAN
+"""
 ################################################################################
-# Regex + Beautiful Soup.
+# Homework - 2
+# Exercise - 2 Flags (Medium)
 ################################################################################
-# This script shows how to use powerful regex as another tool to navigate tags
 
 from urllib import request
 from bs4 import BeautifulSoup as BS
@@ -19,7 +26,3 @@ for flag in flags:
     f = flag.find('img', {'src': re.compile('.*')})
     country = re.compile('_of_(.*).svg/').findall(f['src'])[0]
     print(f'Path of {country} flag is..:\n{f["src"]}\n')
-
-################################################################################
-# Experiment with code on your own.
-# Can you extract all prices using regex? Directly? Indirectly?
