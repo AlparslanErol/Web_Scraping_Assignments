@@ -44,6 +44,26 @@ definitions of tasks:
     
 > **Deadline:** 17.03.2021
 
+### Folder ``04``
+In this folder, you can find the third assignment of the course which is ``Exercises in scraping single static page``
+and my solutions.\
+There are 1 main exercises in this assignment with 3 sub points,
+1.  **Musicians**\
+In this task ``Wikipedia.org``: 
+-   https://en.wikipedia.org/wiki/Lists_of_musicians
+-   https://en.wikipedia.org/wiki/List_of_rock_music_performers
+-   https://en.wikipedia.org/wiki/Queen_(band)
+
+pages are used to scrap data.
+
+You can find the exact definitions of points:
+- From the page ``first`` linked above extract links to web pages containing information about ``musicians specialising in music
+ genre beginning with "R"``. 
+- From the page ``second`` linked above extract links to web pages containing information about ``musicians whose name begin with "Q"``.
+- From the page ``third`` linked above extract extract: the ``name of the band``, ``the genre``, ``number of years active``.
+    
+> **Deadline:** 21.03.2021 - 23:59
+
 ### Virtual Environment with Project Requirements
 > ``Python 3.9.0`` was used to develop for the homework assignments.\
 > You can find the required python packages and their versions in ``requirements.txt`` file.\
