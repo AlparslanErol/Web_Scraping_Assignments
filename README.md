@@ -64,6 +64,25 @@ You can find the exact definitions of points:
     
 > **Deadline:** 21.03.2021 - 23:59
 
+### Folder ``05``
+In this folder, you can find the third assignment of the course which is ``Exercises in scraping multiple static pages``
+and my solutions.\
+There are 1 main exercises in this assignment with 4 sub points,
+1.  **Musicians**\
+In this task ``Wikipedia.org``: 
+-   https://en.wikipedia.org/wiki/Lists_of_musicians is used to scrap data.
+
+You can find the exact definitions of points:
+- Extract links to web pages containing information about ``musicians specialising in music genre beginning with "A"``.
+- Extract links to artists' web pages for the first of the links from the previous step.
+- From artist's pages extract: ``name of the band``, ``years active``.
+- As an output use ``default print function on pandas data frame``.
+
+This script is scrap the data if and only if ``name`` and ``year_active`` features have value(not None valued) in the 
+website.
+    
+> **Deadline:** 28.03.2021 - 23:59
+
 ### Virtual Environment with Project Requirements
 > ``Python 3.9.0`` was used to develop for the homework assignments.\
 > You can find the required python packages and their versions in ``requirements.txt`` file.\
