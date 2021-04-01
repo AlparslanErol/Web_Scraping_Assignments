@@ -22,7 +22,7 @@ def scraper(uls, link_temp_list, scrap_all=False):
     :param scrap_all:
     :return:
     """
-    if not scrap_all:
+    if scrap_all:
         for ul in uls:
             for li in ul.find_all('li'):
                 try:
@@ -55,7 +55,6 @@ try:
         # This part prepares preliminary links - links for lists of links :)
         regex = re.compile('[A]')
         regex_1 = re.compile('href="(.*)"\s')
-
         try:
             tags = bs.find('span', {'id': regex}).parent.next_sibling.next_sibling.next_sibling.ul
         except Exception as e:

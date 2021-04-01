@@ -80,6 +80,10 @@ You can find the exact definitions of points:
 
 This script is scrap the data if and only if ``name`` and ``year_active`` features have value(not None valued) in the 
 website.
+
+> In the python script there is a function ``scraper`` to  scrap data from links in musician genre links.\
+> You can use argument ``scrap_all`` to decide if you want to scrap all data in this links or only the first links in
+> music genre links. This argument is ``False`` as default. But if you want to scrap all data, simply update this as ``True``.
     
 > **Deadline:** 28.03.2021 - 23:59
 
