@@ -17,7 +17,7 @@ class LinksSpider(scrapy.Spider):
     allowed_domains = ['https://en.wikipedia.org/']
     try:
         with open("link_lists.csv", "rt") as f:
-            start_urls = [url.strip() for url in f.readlines()][1:]
+            start_urls = [url.strip() for url in f.readlines()][1:2]
     except:
         start_urls = []
 
