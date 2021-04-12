@@ -65,7 +65,7 @@ You can find the exact definitions of points:
 > **Deadline:** 21.03.2021 - 23:59
 
 ### Folder ``05``
-In this folder, you can find the third assignment of the course which is ``Exercises in scraping multiple static pages``
+In this folder, you can find the fourth assignment of the course which is ``Exercises in scraping multiple static pages``
 and my solutions.\
 There are 1 main exercises in this assignment with 4 sub points,
 1.  **Musicians**\
@@ -88,7 +88,7 @@ website.
 > **Deadline:** 28.03.2021 - 23:59
 
 ### Folder ``06``
-In this folder, you can find the fourth assignment of the course which is ``Exercises in static scraping using Scrapy``
+In this folder, you can find the fifth assignment of the course which is ``Exercises in static scraping using Scrapy``
 and my solutions.\
 There are 1 main exercises in this assignment with 4 sub points,
 1.  **Musicians**\
