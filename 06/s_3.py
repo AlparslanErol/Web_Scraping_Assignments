@@ -9,8 +9,8 @@ import scrapy
 
 
 class Musician(scrapy.Item):
-    name        = scrapy.Field()
-    year_active       = scrapy.Field()
+    name = scrapy.Field()
+    year_active = scrapy.Field()
 
 
 class LinksSpider(scrapy.Spider):
@@ -24,8 +24,8 @@ class LinksSpider(scrapy.Spider):
 
     def parse(self, response):
         p = Musician()
-        name_xpath        = '//h1/text()'
-        year_active_xpath       = '//span[text()="Years active"]/../following-sibling::*/text()'
+        name_xpath = '//h1/text()'
+        year_active_xpath = '//span[text()="Years active"]/../following-sibling::*/text()'
 
         p['name'] = response.xpath(name_xpath).getall()
         p['year_active'] = response.xpath(year_active_xpath).getall()

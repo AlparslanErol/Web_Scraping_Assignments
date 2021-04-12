@@ -7,8 +7,10 @@ Created on 9.04.2021 - 03:57
 """
 import scrapy
 
+
 class Link(scrapy.Item):
     link = scrapy.Field()
+
 
 class LinkListsSpider(scrapy.Spider):
     name = 'link_lists'

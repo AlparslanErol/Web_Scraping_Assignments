@@ -87,6 +87,33 @@ website.
     
 > **Deadline:** 28.03.2021 - 23:59
 
+### Folder ``06``
+In this folder, you can find the fourth assignment of the course which is ``Exercises in static scraping using Scrapy``
+and my solutions.\
+There are 1 main exercises in this assignment with 4 sub points,
+1.  **Musicians**\
+In this task ``Wikipedia.org``: 
+-   https://en.wikipedia.org/wiki/Lists_of_musicians is used to scrap data.
+
+You can find the exact definitions of points:
+- Extract links to web pages containing information about ``musicians specialising in music genre beginning with "A"``.
+- Extract links to artists' web pages for the first of the links from the previous step.
+- From artist's pages extract: ``name of the band``, ``years active``.
+- As an output use ``default print function on pandas data frame``.
+
+This script is scrap the data if and only if ``name`` and ``year_active`` features have value(not None valued) in the 
+website.
+
+After you create a project template for Scrapy, you can put those python scripts inside your spider folder. After that
+you are ready to scrape data from the allowed domain. To do this, go your Scraper project root folder and run:
+```shell script
+# If you want to write output of the scraper in a .csv file
+scrapy crawl link_lists -o link_lists.csv
+scrapy crawl links -o links.csv
+scrapy crawl musicians -o musicians.csv
+``` 
+> **Deadline:** 11.04.2021 - 23:59
+
 ### Virtual Environment with Project Requirements
 > ``Python 3.9.0`` was used to develop for the homework assignments.\
 > You can find the required python packages and their versions in ``requirements.txt`` file.\
