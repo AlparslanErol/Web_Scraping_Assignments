@@ -10,7 +10,7 @@ import scrapy
 
 class Musician(scrapy.Item):
     name = scrapy.Field()
-    year_active = scrapy.Field()
+    years_active = scrapy.Field()
 
 
 class LinksSpider(scrapy.Spider):
@@ -23,11 +23,22 @@ class LinksSpider(scrapy.Spider):
         start_urls = []
 
     def parse(self, response):
-        p = Musician()
+        m = Musician()
         name_xpath = '//h1/text()'
-        year_active_xpath = '//span[text()="Years active"]/../following-sibling::*/text()'
+        m['name'] = response.xpath(name_xpath).getall()
 
-        p['name'] = response.xpath(name_xpath).getall()
-        p['year_active'] = response.xpath(year_active_xpath).getall()
+        years_active_xpath = "//th/span[contains(text(), 'Years active')]/../following-sibling::*/text()"
+        m['years_active'] = response.xpath(years_active_xpath).getall()
+        if not m['years_active']:
+            years_active_xpath = '//th/span[contains(text(),"Years active")]/following::td[1]/div/ul/li/text()[1]'
+            m['years_active'] = response.xpath(years_active_xpath).getall()
 
-        yield p
+            if not m['years_active']:
+                years_active_xpath = '//th[contains(text(),"Years")]/following::td[1]/text()'
+                m['years_active'] = response.xpath(years_active_xpath).getall()
+
+        if '\n' in m['years_active']:
+            years_active_xpath = '//th/span[contains(text(),"Years active")]/following::td[@class = "infobox-data"][1]/ul/li/text()'
+            m['years_active'] = response.xpath(years_active_xpath).getall()
+
+        yield m
