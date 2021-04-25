@@ -134,6 +134,16 @@ to your tutor.
 > **Deadline:** 18.04.2021 - 23:59
 
 
+### Project
+In the project folder, you can find ``project.txt`` file. From that file you can access:
+- URL of our project repository in GitHub.
+- Name and ID of group members.
+
+Please find our project repository in [HERE](https://github.com/AlparslanErol/Stock_Price_Scraping).
+
+> **Deadline:** 09.05.2021 - 23:59
+
+
 ### Virtual Environment with Project Requirements
 > ``Python 3.9.0`` was used to develop for the homework assignments.\
 > You can find the required python packages and their versions in ``requirements.txt`` file.\
