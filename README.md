@@ -114,6 +114,26 @@ scrapy crawl musicians -o musicians.csv
 ``` 
 > **Deadline:** 11.04.2021 - 23:59
 
+### Folder ``07``
+In this folder, you can find the sixth assignment of the course which is ``Exercises in HTML parsing``
+and my solution.\
+There are 1 main exercise in this assignment with 4 sub points,
+1.  **Selenium Bot**\
+In this task ``campuswire.com`` is used to scrap data.
+
+You can find the exact definitions of points:
+- Write a ``selenium``bot, that will log into a Campuswire account, and will send itself (its .py file, not it's code) 
+to your tutor.
+
+> Here is the process of selenium bot:
+> - Connect to campuswire.com.
+> - Take e-mail and password as an input of login process and login the user account.
+> - Search the name of tutor from the people list.
+> - Send messages to tutor about the homework and upload homework file as ```.py``` file.
+
+> **Deadline:** 18.04.2021 - 23:59
+
+
 ### Virtual Environment with Project Requirements
 > ``Python 3.9.0`` was used to develop for the homework assignments.\
 > You can find the required python packages and their versions in ``requirements.txt`` file.\
