@@ -3,5 +3,5 @@ https://github.com/AlparslanErol/Stock_Price_Scraping
 
 Group Members:
 - Alparslan Erol | 428681
-- Anna Sikora |
-- Tesfahun Tegene Boshe |
+- Anna Sikora | 431354
+- Tesfahun Tegene Boshe | 432812
